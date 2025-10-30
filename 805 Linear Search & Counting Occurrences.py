@@ -30,6 +30,7 @@ for i in range(len(teams)):
 print (str(occurrences) + " teams have scored more than 60")
 '''
 
+'''
 # 805Task3.py
 # Standard Algorithms - Linear Search & Counting Occurrences
 
@@ -65,3 +66,39 @@ def findCharacterPosition(oneToFind):
 target = getTargetCharacter()
 characters = getCharacters()
 foundPosition = findCharacterPosition(target)
+'''
+# 805Task4.py
+# Standard Algorithms - Linear Search & Counting Occurrences
+
+# Investigate and modify
+
+def getTarget():
+  targetAnimal = input("Please enter the target animal you are searching for")
+
+  return targetAnimal
+
+def getCircusAnimalsList():
+  animals = ["giraffe", "chicken", "lion", "cheetah", "rat", "elephant", "snake", "chicken", "horse"]
+
+  return animals
+
+def countOccurrences(targetAnimal, animals):
+  occurrences = 0
+  for i in range(len(animals)):
+    if animals[i] == targetAnimal:
+      occurrences += 1
+  return occurrences
+  #for i in range(len.....):
+  #  if animals[i] == ......:
+  # FINISH OFF THIS CODE
+
+def printOccurrences(occurrences):
+  print(occurrences)
+
+
+#*************  MAIN *************
+
+targetAnimal = getTarget()
+animals= getCircusAnimalsList()
+occurrences = countOccurrences(targetAnimal, animals)
+printOccurrences(occurrences)
