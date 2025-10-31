@@ -31,3 +31,33 @@ print("The runner who was fastest is:",runner_name[position])
 print("Their runner number was",runner_num[position])
 print("The amount raised for charity was",money_raised[position])
 '''
+# 1001Task6.py
+# Standard Algorithms - Finding Min + Max
+
+# Investigate and modify
+
+from random import *
+
+numbers = []
+
+def random20numbers():
+  for x in range(20):
+    numbers.append(randrange(1,51))
+  return numbers
+
+def displayNumbers (numbers):
+  for x in range(20):
+    print  (numbers[x]," ",end="")
+
+def findingMax(numbers):
+  maximum = numbers[0]
+  for index in range(1,len(numbers)):
+    if numbers[index]>maximum:
+      maximum = numbers[index]
+      
+  print()
+  print("The highest number (maximum) in the list is",maximum,".")
+
+numbers = random20numbers()
+displayNumbers(numbers)
+findingMax(numbers)
