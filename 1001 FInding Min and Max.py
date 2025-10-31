@@ -1,3 +1,4 @@
+'''
 # 1001Task3.py
 # Standard Algorithms - Finding Min + Max
 
@@ -16,7 +17,7 @@ def displayNumbers (numbers):
 def findingMin (numbers):
   position = 0
   minimum = numbers[0]
-  for index in range(len(numbers)):
+  for index in range(1,len(numbers)):
     if numbers[index]<minimum:
       minimum = numbers[index]
       position = index
@@ -29,3 +30,4 @@ position = findingMin(runner_time)
 print("The runner who was fastest is:",runner_name[position])
 print("Their runner number was",runner_num[position])
 print("The amount raised for charity was",money_raised[position])
+'''
