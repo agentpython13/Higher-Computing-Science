@@ -36,10 +36,11 @@ with open('randomnumber.txt', 'w') as file:
         file.write(str(random.randint(1,100))+'\n')
 
 with open('randomnumber.txt', 'r') as file:
-    number = file.readline().rstrip('\n')
-    while number:
-        if number[0] == 13:
+    line = file.readline().rstrip('\n')
+    while line:
+        if int(line) == 13:
             counter += 1
+        number = file.readline().rstrip('\n')
 print('The number 13 occurs', counter, 'time(s) in the list.')
         
         
